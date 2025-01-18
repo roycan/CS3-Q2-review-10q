@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Anniversary Lesson</title>
+    <title>JavaScript Lesson: Object Properties</title>
+    <script defer src="run_code.js"></script>
     <style>
         body {
             background-color: cornsilk;
             font-family: Arial, sans-serif;
+            margin: 20px;
         }
 
         nav {
@@ -23,7 +25,8 @@
         }
 
         h1,
-        h2 {
+        h2,
+        h3 {
             color: royalblue;
             font-family: cursive;
         }
@@ -37,6 +40,8 @@
         }
 
         .container {
+            max-width: 600px;
+            margin: auto;
             padding: 20px;
         }
 
@@ -58,6 +63,26 @@
         button:hover {
             background-color: darkblue;
         }
+
+        .output {
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            display: inline-block;
+            padding: 2px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 
@@ -67,32 +92,26 @@
         <a href="q-silver_anniv.html">Silver Anniversary Lesson</a>
         <a href="q-counting_maybes.html">Counting Maybes Lesson</a>
         <a href="q-paragraph_text.html">Get Paragraph Content Lesson</a>
+        <a href="q-object_properties.html">Object Properties Lesson</a>
     </nav>
     <div class="container">
-        <h1>Silver Anniversary Lesson</h1>
-        <p>In our society, being together for 25 years means a "Silver Anniversary".</p>
-        <p>Using an if..else, write a single line of JS Code to check yearTogether variable against currentYear to give
-            a message on the console, either of these two messages, `Celebrating in n year(s)`, or `Celebrating/ted
-            already` using templated string based on the difference between currentYear and yearTogether.</p>
-        <p>NOTE: NO curly brackets, semi-colon is needed before an else and at the very end. Use one space only between
-            keywords, variable and operators. Remember everything is case sensitive</p>
-        <p>Example Input1:</p>
-        <p>yearTogether = 2010</p>
-        <p>currentYear = 2025</p>
-        <p>Example Output: `Celebrating in 10 year(s)`</p>
-        <p>Example Input2:</p>
-        <p>yearTogether = 2000</p>
-        <p>currentYear = 2025</p>
-        <p>Example Output: `Celebrating/ted already`</p>
+        <h1>JavaScript Question</h1>
+        <p>Create the property <code>dProp</code> inside <code>dObj</code> with an initial value of 100. Assume that <code>dProp</code> and <code>dObj</code> have been declared and initialized already.</p>
 
-        <h2>Try it Yourself!</h2>
-        <textarea id="codeInput" rows="10" placeholder="Write your JavaScript code here..."></textarea><br>
-        <button onclick="runCode()">Run Code</button>
+        <h2>Lesson: Adding Properties to JavaScript Objects</h2>
+        <p>To add a property to an existing object in JavaScript, you can use the dot notation or the bracket notation. Here's how:</p>
 
-        <div class="output" id="output"></div>
-        <div id="feedback" class="feedback"></div>
+        <h3>Dot Notation</h3>
+        <p>The dot notation is straightforward. You access the property of an object using a dot followed by the property name. Here's an example:</p>
+        <pre><code>let dObj = {}; // Assume dObj is an empty object<br>let dProp = 'dProp'; // Assume dProp is a string containing the property name<br><br>// Adding dProp with an initial value of 100 using dot notation<br>dObj.dProp = 100;</code></pre>
+
+        <h3>Bracket Notation</h3>
+        <p>The bracket notation allows you to use variables to define properties. It's particularly useful when the property names are dynamic or not valid identifiers.</p>
+        <pre><code>let dObj = {}; // Assume dObj is an empty object<br>let dProp = 'dProp'; // Assume dProp is a string containing the property name<br><br>// Adding dProp with an initial value of 100 using bracket notation<br>dObj[dProp] = 100;</code></pre>
+
+        <h2>Putting It All Together</h2>
+        <p>Here's how you can declare and initialize <code>dObj</code> and <code>dProp</code>:</p>
     </div>
-    <script src="run_code.js"></script>
 </body>
 
 </html>

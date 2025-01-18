@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,69 +10,38 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-
         nav {
             background-color: #333;
             padding: 10px;
         }
-
         nav a {
             color: white;
             margin-right: 10px;
             text-decoration: none;
         }
-
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             color: royalblue;
             font-family: cursive;
         }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .output {
-            margin-top: 20px;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .feedback {
-            margin-top: 20px;
-        }
-
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
         code {
             background-color: #f4f4f4;
-            display: inline-block;
             padding: 2px 4px;
             border-radius: 4px;
         }
-
-        .success {
+        .feedback.success {
             color: green;
         }
-
-        .failure {
+        .feedback.failure {
             color: red;
         }
-
+        .container {
+            padding: 20px;
+        }
         textarea {
             width: 100%;
             padding: 10px;
             margin-top: 10px;
         }
-
         button {
             padding: 10px 20px;
             margin-top: 10px;
@@ -82,13 +50,11 @@
             border: none;
             cursor: pointer;
         }
-
         button:hover {
             background-color: darkblue;
         }
     </style>
 </head>
-
 <body>
     <nav>
         <a href="index.html">Home</a>
@@ -100,21 +66,50 @@
     <div class="container">
         <h1>JavaScript Question</h1>
         <p>Create the property <code>dProp</code> inside <code>dObj</code> with an initial value of 100. Assume that <code>dProp</code> and <code>dObj</code> have been declared and initialized already.</p>
+    
+        <h3>Initial code</h3>
+        <pre><code>let dObj = {};
+let dProp = 'dProp';
+        </code></pre>   
+
+        <h2>Experiment with Your Code</h2>
+        <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
+        <button onclick="runCode()">Run Code</button>
+        <div class="output" id="output"></div>
+
+
+
+        <hr>
 
         <h2>Lesson: Adding Properties to JavaScript Objects</h2>
         <p>To add a property to an existing object in JavaScript, you can use the dot notation or the bracket notation. Here's how:</p>
-
+    
         <h3>Dot Notation</h3>
         <p>The dot notation is straightforward. You access the property of an object using a dot followed by the property name. Here's an example:</p>
-        <pre><code>let dObj = {}; // Assume dObj is an empty object<br>let dProp = 'dProp'; // Assume dProp is a string containing the property name<br><br>// Adding dProp with an initial value of 100 using dot notation<br>dObj.dProp = 100;</code></pre>
-
+        <div class="example">
+            <pre><code>let object = {}; // Assume object is an empty object
+    let property = 'property'; // Assume property is a string containing the property name
+    
+    // Adding property with an initial value of 100 using dot notation
+    object.property = 100;
+    
+    console.log(object); // Output: { property: 100 }</code></pre>
+        </div>
+    
         <h3>Bracket Notation</h3>
         <p>The bracket notation allows you to use variables to define properties. It's particularly useful when the property names are dynamic or not valid identifiers.</p>
-        <pre><code>let dObj = {}; // Assume dObj is an empty object<br>let dProp = 'dProp'; // Assume dProp is a string containing the property name<br><br>// Adding dProp with an initial value of 100 using bracket notation<br>dObj[dProp] = 100;</code></pre>
+        <div class="example">
+            <pre><code>let object = {}; // Assume object is an empty object
+    let property = 'property'; // Assume property is a string containing the property name
+    
+    // Adding property with an initial value of 100 using bracket notation
+    object[property] = 100;
+    
+    console.log(object); // Output: { property: 100 }</code></pre>
+        </div>
+    
+        
 
-        <h2>Putting It All Together</h2>
-        <p>Here's how you can declare and initialize <code>dObj</code> and <code>dProp</code>:</p>
-    </div>
+   <script src="run_code.js"></script>
 </body>
-
 </html>

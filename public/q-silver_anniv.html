@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Anniversary Lesson</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        h1,
+        h2 {
+            color: royalblue;
+            font-family: cursive;
+        }
+
+        .feedback.success {
+            color: green;
+        }
+
+        .feedback.failure {
+            color: red;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <div class="container">
+        <h1>Silver Anniversary Lesson</h1>
+        <p>In our society, being together for 25 years means a "Silver Anniversary".</p>
+        <p>Using an if..else, write a single line of JS Code to check yearTogether variable against currentYear to give
+            a message on the console, either of these two messages, `Celebrating in n year(s)`, or `Celebrating/ted
+            already` using templated string based on the difference between currentYear and yearTogether.</p>
+        <p>NOTE: NO curly brackets, semi-colon is needed before an else and at the very end. Use one space only between
+            keywords, variable and operators. Remember everything is case sensitive</p>
+        <p>Example Input1:</p>
+        <p>yearTogether = 2010</p>
+        <p>currentYear = 2025</p>
+        <p>Example Output: `Celebrating in 10 year(s)`</p>
+        <p>Example Input2:</p>
+        <p>yearTogether = 2000</p>
+        <p>currentYear = 2025</p>
+        <p>Example Output: `Celebrating/ted already`</p>
+
+        <h2>Try it Yourself!</h2>
+        <textarea id="codeInput" rows="10" placeholder="Write your JavaScript code here..."></textarea><br>
+        <button onclick="runCode()">Run Code</button>
+
+        <div class="output" id="output"></div>
+
+
+        <hr>
+
+        <h2>Lesson 1: Basics of if..else Statements</h2>
+        <p>In JavaScript, we use the <code>if..else</code> statement to perform different actions based on different
+            conditions. Here's how the syntax looks:</p>
+        <pre><code>if (condition) {
+    // code to run if the condition is true
+} else {
+    // code to run if the condition is false
+}</code></pre>
+        <p>For example, let's check whether a number is positive or negative:</p>
+        <pre><code>let number = 5;
+if (number > 0) {
+    console.log("Positive number");
+} else {
+    console.log("Negative number");
+}</code></pre>
+
+        <h2>Lesson 2: Using Templated Strings</h2>
+        <p>Templated strings, or template literals, allow you to include expressions within your strings. They are
+            enclosed by backticks (<code>`</code>) instead of quotes and can contain placeholders (${expression}).
+            Here's an example:</p>
+        <pre><code>let name = "Alice";
+let message = `Hello, ${name}!`;
+console.log(message); // Output: "Hello, Alice!"</code></pre>
+
+
+    </div>
+    <script src="run_code.js"></script>
+</body>
+
+</html>

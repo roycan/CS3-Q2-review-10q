@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lesson: Number Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="run_code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Lesson: Number Filter</h1>
+        <p>Using the array <code>numberList</code> that contains numbers, filter out the numbers that are divisible by both 2 and 6, and log them to the console.</p>
+
+        <h3> Sample Input </h3>
+        <pre><code>let numberList = [12, 18, 23, 36, 48];<br></code></pre>
+
+        <h2>Solve it with Your Code</h2>
+        <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
+        <button onclick="runCode()">Run Code</button>
+        <div class="output" id="output"></div>
+
+        <hr> 
+
+        <h2>Lesson: Filtering Numbers</h2>
+        <p>To filter numbers in an array, you can use the <code>filter</code> method. Here's a weird idea as an example:</p>
+        <pre><code>let numberList = [12, 18, 23, 36, 48];<br>let filteredNumbers = numberList.filter(num => num % 12 === 0);<br>console.log(filteredNumbers);</code></pre>
+
+        <h3>Combining Both on One Line</h3>
+        <p>To accomplish the task on one line, you can use both the <code>for..in</code> loop and the <code>if</code> statement in a single statement:</p>
+        <pre><code>for (const index in numberList) if (numberList[index] % 12 === 0) console.log(numberList[index]);</code></pre>
+        <p>Here, we use <code>% 12 === 0</code> because a number divisible by both 2 and 6 is also divisible by 12 ?!?</p>
+    </div>
+
+    <script>
+        function runCode() {
+            const numberList = [12, 18, 23, 36, 48];  // Example input
+            const userCode = document.getElementById("solutionCode").value;
+
+            try {
+                const userFunction = new Function(userCode + "\n" + `return numberList;`);
+                const result = userFunction();
+                document.getElementById("outputArea").textContent = result.filter(num => num % 12 === 0).join('\n');
+            } catch (error) {
+                document.getElementById("outputArea").textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

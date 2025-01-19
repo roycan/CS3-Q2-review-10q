@@ -4,77 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Lesson: Get Paragraph Content</title>
-    <script defer src="run_code.js"></script>
-    <style>
-        body {
-            background-color: cornsilk;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin-right: 10px;
-            text-decoration: none;
-        }
-        h1, h2 {
-            color: royalblue;
-            font-family: cursive;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-        }
-        .output {
-            margin-top: 20px;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        code {
-            background-color: #f4f4f4;
-            display: inline-block;
-            padding: 2px;
-            border-radius: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="q-silver_anniv.html">Silver Anniversary Lesson</a>
-        <a href="q-counting_maybes.html">Counting Maybes Lesson</a>
-        <a href="q-paragraph_text.html">Get Paragraph Content Lesson</a>
-    </nav>
+
     <div class="container">
         <h1>JavaScript Lesson: Get Paragraph Content</h1>
         <p>Given the paragraph with ID <code>dPara</code>, write JavaScript code to get the content of the paragraph and log it to the console.</p>
         
-        
-        <h2>Try it Yourself!</h2>
-        <p id="dPara">My ID is dPara. May you be blessed always!</p>
-    
-
-        <h2>Experiment with Your Code</h2>
-        <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
-        <button onclick="runCode()">Run Code</button>
-        <div class="output" id="output"></div>
-
-        <hr>
         <h2>Lesson 1: Basics of DOM Manipulation</h2>
         <p>DOM (Document Object Model) manipulation is the process of dynamically changing the structure, style, or content of a web page using JavaScript. One of the common tasks in DOM manipulation is selecting elements and accessing their content. Here’s how you can select an element by its ID:</p>
         <pre><code>let element = document.getElementById("elementID");</code></pre>
         <p>You can then access the content of the element using the <code>innerText</code> or <code>innerHTML</code> properties:</p>
         <pre><code>let content = element.innerText;</code></pre>
         
+        <h2>Try it Yourself!</h2>
+        <p id="dPara">May you be blessed always!</p>
+        <button onclick="getParagraphContent()">Get Paragraph Content</button>
+
+        <div class="output" id="contentOutput"></div>
+
+        <h2>Experiment with Your Code</h2>
+        <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
+        <button onclick="runCode()">Run Code</button>
+        <div class="output" id="output"></div>
     </div>
+    <script src="run_code.js"></script>
 </body>
 </html>

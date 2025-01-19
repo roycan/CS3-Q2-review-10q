@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    background-color: cornsilk;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    color: royalblue;
+    font-family: cursive;
+}
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+}
+.feedback.success {
+    color: green;
+}
+.feedback.failure {
+    color: red;
+}
+.output {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+code {
+    background-color: #f4f4f4;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+}

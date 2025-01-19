@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lesson: User Response</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="run_code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Lesson: User Response</h1>
+        <p>Write JavaScript code to get the user's input from the input field with ID <code>yourMess</code> and log it to the console.</p>
+
+
+
+        <p>    Please enter your message: 
+
+            <input id="yourMess" type="text" value="my id is yourMess"/>
+       
+       </p>
+
+       <h2>Try it Yourself!</h2>
+       <textarea id="codeInput" rows="10" placeholder="Write your JavaScript code here..."></textarea><br>
+       <button onclick="runCode()">Run Code</button>
+       
+       <div class="output" id="output"></div>
+
+        <hr>
+        <h2>Lesson: Handling User Input</h2>
+        <p>To handle user input, you can use the <code>document.getElementById</code> method to get the input field and access its value:</p>
+        <pre><code>let userInput = document.getElementById("yourMess").value;</code></pre>
+
+        <h3>Console Logging</h3>
+        <p>The <code>console.log</code> method is used to print messages to the browser's console. It's a useful tool for debugging and testing your code:</p>
+        <pre><code>console.log(userInput);</code></pre>
+
+        <h3>Combining Concepts</h3>
+        <p>Combining these concepts allows you to access the user's input and log it to the console in a single line of code. Practice integrating input handling and console logging to effectively debug and test your programs.</p>
+    </div>
+
+    <script>
+        function runCode() {
+            const userCode = document.getElementById("solutionCode").value;
+
+            try {
+                const userFunction = new Function(userCode + `return document.getElementById('yourMess').value;`);
+                const userInput = userFunction();
+                console.log(userInput);
+                document.getElementById("outputArea").textContent = userInput;
+            } catch (error) {
+                document.getElementById("outputArea").textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

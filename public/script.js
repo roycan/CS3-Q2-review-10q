@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="q-object_properties.html">Object Properties Lesson</a>
         <a href="q-number_filter.html">Number Filter Lesson</a>
         <a href="q-final_grades.html">Final Grades Lesson</a>
+        <a href="q-user_response.html">User Response Lesson</a>
     `;
     document.body.insertBefore(nav, document.body.firstChild);
 });

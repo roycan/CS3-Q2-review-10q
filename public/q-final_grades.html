@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lesson: Final Grades</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="run_code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Lesson: Final Grades</h1>
+        <p>Using the object <code>studFGs</code> that contains student names and their final grades, find the students with grades 2.50 and below and log their names and grades to the console.</p>
+        <p> Using the for..in loop with if </p>
+
+        <h2>Sample Inputs and Outputs</h2>
+        <div class="example">
+            <p>Given <code>studFGs = { Aline: 1.25, Adel: 2.75, Adam: 1.75 }</code>, the output should be:</p>
+            <pre><code>Adel-> 2.75</code></pre>
+        </div>
+    
+        <div class="example">
+            <p>Given <code>studFGs = { Blanca: 2.60, Carlos: 2.30, Diana: 2.50 }</code>, the output should be:</p>
+            <pre><code>Blanca-> 2.60
+    Diana-> 2.50</code></pre>
+        </div>
+    
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <div class="codeArea">
+            <textarea id="codeInput" rows="10" cols="50"></textarea>
+        </div>
+    
+        <button onclick="runCode()">Run Code</button>
+    
+        <div class="output">
+            <h2>Output</h2>
+            <pre id="output"></pre>
+        </div>
+    
+        <h2>Lesson: JavaScript Basics</h2>
+        <div class="lesson">
+            <h3>for..in Loop</h3>
+            <p>The <code>for..in</code> loop iterates over the properties of an object. It’s commonly used when you need to access or manipulate the properties of an object:</p>
+            <pre><code>for (const key in object) {
+        // Code to be executed for each property
+    }</code></pre>
+            
+            <h3>If Statement</h3>
+            <p>The <code>If</code> statement allows you to perform actions based on a condition. If the condition evaluates to true, the block of code inside the if statement gets executed:</p>
+            <pre><code>if (condition) {
+        // Code to be executed if condition is true
+    }</code></pre>
+            
+            <h3>Template Literals</h3>
+            <p>Template literals, also known as template strings, are a way to embed variables and expressions inside strings using backticks <code>`</code> and placeholders <code>${/* variable */}</code>:</p>
+            <pre><code>const name = "John"; 
+    const greeting = `Hello, ${name}!`; 
+    console.log(greeting); // Output: Hello, John!</code></pre>
+    
+            <h3>Combining Concepts</h3>
+            <p>Combining different JavaScript concepts will allow you to solve complex problems efficiently. Practice integrating loops, conditions, and template literals to process and display data dynamically.</p>
+        </div>
+    
+</body>
+</html>

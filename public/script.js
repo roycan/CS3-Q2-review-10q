@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="q-user_response.html">User Response Lesson</a>
         <a href="q-empty_input.html">Empty Input Lesson</a>
         <a href="q-key_in_obj.html">Key in Object Lesson</a>
+        <a href="q-deleting_properties.html">Deleting Properties Lesson</a>
 
     `;
     document.body.insertBefore(nav, document.body.firstChild);

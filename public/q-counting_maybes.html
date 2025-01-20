@@ -7,6 +7,7 @@
     <title>Counting "Maybe" Responses Lesson</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer src="run_code.js"></script>
 
 </head>
 
@@ -17,7 +18,8 @@
         <p>Using the array <code>responses</code> that contains "yes", "no", or "maybe", count the number of "maybe"
             responses and place it in <code>totalMaybes</code>, which has been declared and initialized to 0. Use a
             <code>for..loop</code> (not <code>for..in</code>) and an <code>if</code> statement on one line. Use
-            <code>ndx</code> as the variable in the <code>for..loop</code>.</p>
+            <code>ndx</code> as the variable in the <code>for..loop</code>.
+        </p>
 
         <h2>Sample Input and Output</h2>
         <p>Given the following inputs:</p>
@@ -26,6 +28,10 @@ let totalMaybes = 0;</code></pre>
         <p>The output should be:</p>
         <pre><code>// totalMaybes is 2</code></pre>
 
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <b> Take a screenshot with both your solution code, the output, and your browser's url. Submit all your
+            screenshots to KHub.</b>
         <h2>Experiment with Your Code</h2>
         <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
         <button onclick="runCode()">Run Code</button>
@@ -33,34 +39,39 @@ let totalMaybes = 0;</code></pre>
         <div class="output" id="output"></div>
 
         <hr>
-        <h2>Lesson 1: Basics of for Loops</h2>
-        <p>A <code>for</code> loop is used to repeatedly execute a block of code a certain number of times. Here's the
-            syntax:</p>
-        <pre><code>for (initialization; condition; increment) {
+        <button class="accordion">Lesson 1: Basics of for Loops</button>
+        <div class="panel">
+            <p>A <code>for</code> loop is used to repeatedly execute a block of code a certain number of times. Here's
+                the
+                syntax:</p>
+            <pre><code>for (initialization; condition; increment) {
     // code to be executed
 }</code></pre>
-        <p>For example, to print numbers from 0 to 4:</p>
-        <pre><code>for (let i = 0; i < 5; i++) {
+            <p>For example, to print numbers from 0 to 4:</p>
+            <pre><code>for (let i = 0; i < 5; i++) {
     console.log(i);
 }</code></pre>
+        </div>
 
-        <h2>Lesson 2: The if Statement</h2>
-        <p>The <code>if</code> statement is used to perform actions based on a condition. If the condition is true, the
-            block of code inside the <code>if</code> statement is executed:</p>
-        <pre><code>if (condition) {
+        <button class="accordion">Lesson 2: The if Statement</button>
+        <div class="panel">
+            <p>The <code>if</code> statement is used to perform actions based on a condition. If the condition is true,
+                the
+                block of code inside the <code>if</code> statement is executed:</p>
+            <pre><code>if (condition) {
     // code to run if the condition is true
 } else {
     // code to run if the condition is false
 }</code></pre>
-        <p>For example, to check if a number is even:</p>
-        <pre><code>let number = 8;
+            <p>For example, to check if a number is even:</p>
+            <pre><code>let number = 8;
 if (number % 2 === 0) {
     console.log("Even");
 } else {
     console.log("Odd");
 }</code></pre>
+        </div>
     </div>
-    <script src="run_code.js"></script>
 </body>
 
 </html>

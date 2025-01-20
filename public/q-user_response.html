@@ -21,14 +21,20 @@
        
        </p>
 
-       <h2>Try it Yourself!</h2>
+       
+       <h2>Try It Yourself</h2>
+       <p>Type your solution code below:</p>
+       <b> Take a screenshot with both your solution code, the output, your browser's url, and your taskbar's date and time. Submit all your
+           screenshots to KHub.</b>
        <textarea id="codeInput" rows="10" placeholder="Write your JavaScript code here..."></textarea><br>
        <button onclick="runCode()">Run Code</button>
        
        <div class="output" id="output"></div>
 
         <hr>
-        <h2>Lesson: Handling User Input</h2>
+
+        <button class="accordion">Lesson: Handling User Input</button>
+        <div class="panel">
         <p>To handle user input, you can use the <code>document.getElementById</code> method to get the input field and access its value:</p>
         <pre><code>let userInput = document.getElementById("yourMess").value;</code></pre>
 
@@ -39,20 +45,8 @@
         <h3>Combining Concepts</h3>
         <p>Combining these concepts allows you to access the user's input and log it to the console in a single line of code. Practice integrating input handling and console logging to effectively debug and test your programs.</p>
     </div>
+</div>
 
-    <script>
-        function runCode() {
-            const userCode = document.getElementById("solutionCode").value;
 
-            try {
-                const userFunction = new Function(userCode + `return document.getElementById('yourMess').value;`);
-                const userInput = userFunction();
-                console.log(userInput);
-                document.getElementById("outputArea").textContent = userInput;
-            } catch (error) {
-                document.getElementById("outputArea").textContent = "Error: " + error.message;
-            }
-        }
-    </script>
 </body>
 </html>

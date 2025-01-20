@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Lesson: Get Paragraph Content</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer src="run_code.js"></script>
 </head>
+
 <body>
 
     <div class="container">
         <h1>JavaScript Lesson: Get Paragraph Content</h1>
-        <p>Given the paragraph with ID <code>dPara</code>, write JavaScript code to get the content of the paragraph and log it to the console.</p>
-        
-        <h2>Lesson 1: Basics of DOM Manipulation</h2>
-        <p>DOM (Document Object Model) manipulation is the process of dynamically changing the structure, style, or content of a web page using JavaScript. One of the common tasks in DOM manipulation is selecting elements and accessing their content. Here’s how you can select an element by its ID:</p>
-        <pre><code>let element = document.getElementById("elementID");</code></pre>
-        <p>You can then access the content of the element using the <code>innerText</code> or <code>innerHTML</code> properties:</p>
-        <pre><code>let content = element.innerText;</code></pre>
-        
-        <h2>Try it Yourself!</h2>
-        <p id="dPara">May you be blessed always!</p>
-        <button onclick="getParagraphContent()">Get Paragraph Content</button>
+        <p>Given the paragraph with ID <code>dPara</code>, write JavaScript code to get the content of the paragraph and
+            log it to the console.</p>
 
-        <div class="output" id="contentOutput"></div>
+
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <b> Take a screenshot with both your solution code, the output, your browser's url, and your taskbar's date and
+            time. Submit all your
+            screenshots to KHub.</b>
+        <p id="dPara"><i>I'm a paragraph with id dPara. May you be blessed always!</i></p>
+
 
         <h2>Experiment with Your Code</h2>
         <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
         <button onclick="runCode()">Run Code</button>
         <div class="output" id="output"></div>
+
+        <hr>
+
+        <button class="accordion">Lesson 1: Basics of DOM Manipulation</button>
+        <div class="panel">
+            <p>DOM (Document Object Model) manipulation is the process of dynamically changing the structure, style, or
+                content of a web page using JavaScript. One of the common tasks in DOM manipulation is selecting
+                elements
+                and accessing their content. Here’s how you can select an element by its ID:</p>
+            <pre><code>let element = document.getElementById("elementID");</code></pre>
+            <p>You can then access the content of the element using the <code>innerText</code> or <code>innerHTML</code>
+                properties:</p>
+            <pre><code>let content = element.innerText;</code></pre>
+        </div>
     </div>
-    <script src="run_code.js"></script>
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,47 @@
     <script defer src="script.js"></script>
     <script defer src="run_code.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>JavaScript Exercise: Checking for a Key in an Object</h1>
-    <p>Write JavaScript code that checks if "Jane" is one of the keys in the object <code>foundSouls</code> without using a loop, and shows a message on the console either "Found Jane" or "Still looking".</p>
+        <p>Write JavaScript code that checks if "Jane" is one of the keys in the object <code>foundSouls</code> without
+            using a loop, and shows a message on the console either "Found Jane" or "Still looking".</p>
 
-    <h2>Sample Inputs and Outputs</h2>
-    <div class="example">
-        <p>If <code>const foundSouls = { Jane: true, John: true };</code>, the output should be:</p>
-        <pre><code>Found Jane</code></pre>
-    </div>
+        <h2>Sample Inputs and Outputs</h2>
+        <div class="example">
+            <p>If <code>const foundSouls = { Jane: true, John: true };</code>, the output should be:</p>
+            <pre><code>Found Jane</code></pre>
+        </div>
 
-    <div class="example">
-        <p>If <code>const foundSouls = { John: true, Mary: true };</code>, the output should be:</p>
-        <pre><code>Still looking</code></pre>
-    </div>
+        <div class="example">
+            <p>If <code>const foundSouls = { John: true, Mary: true };</code>, the output should be:</p>
+            <pre><code>Still looking</code></pre>
+        </div>
 
+
+
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <b> Take a screenshot with both your solution code, the output, your browser's url, and your taskbar's date and
+            time. Submit all your
+            screenshots to KHub.</b>
 
         <h2>Solve it with Your Code</h2>
         <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
         <button onclick="runCode()">Run Code</button>
         <div class="output" id="output"></div>
 
-        <hr> 
+        <hr>
 
-        <h2>Lesson: Working with Object Keys</h2>
-        <div class="lesson">
-            <h3>Accessing Object Keys</h3>
-            <p>To check if an object contains a specific key, you can use the <code>in</code> operator or the <code>hasOwnProperty</code> method. Here's an overview:</p>
-            <pre><code>// Using the "in" operator
+        <button class="accordion">Lesson: Working with Object Keys</button>
+        <div class="panel">
+            <div class="lesson">
+                <h3>Accessing Object Keys</h3>
+                <p>To check if an object contains a specific key, you can use the <code>in</code> operator or the
+                    <code>hasOwnProperty</code> method. Here's an overview:
+                </p>
+                <pre><code>// Using the "in" operator
 if ("key" in object) {
     // Code to be executed if "key" is in the object
 }
@@ -45,7 +58,9 @@ if ("key" in object) {
 if (object.hasOwnProperty("key")) {
     // Code to be executed if the object has the key
 }</code></pre>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

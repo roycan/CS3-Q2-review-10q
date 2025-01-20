@@ -21,9 +21,12 @@
             font-size: 15px;
             transition: 0.4s;
         }
-        .active, .accordion:hover {
+
+        .active,
+        .accordion:hover {
             background-color: #ccc;
         }
+
         .panel {
             padding: 0 18px;
             display: none;
@@ -47,6 +50,12 @@
 
 
 
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <b> Take a screenshot with both your solution code, the output, your browser's url, and your taskbar's date and
+            time. Submit all your
+            screenshots to KHub.</b>
+
         <h2>Solve it with Your Code</h2>
         <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
         <button onclick="runCode()">Run Code</button>
@@ -56,7 +65,8 @@
 
         <button class="accordion">Lesson: Adding Properties to JavaScript Objects</button>
         <div class="panel">
-            <p>To add a property to an existing object in JavaScript, you can use the dot notation or the bracket notation.
+            <p>To add a property to an existing object in JavaScript, you can use the dot notation or the bracket
+                notation.
                 Here's how:</p>
 
             <h3>Dot Notation</h3>
@@ -72,10 +82,10 @@
 
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         var acc = document.getElementsByClassName("accordion");
         for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
+            acc[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {

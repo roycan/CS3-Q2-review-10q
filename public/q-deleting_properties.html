@@ -32,7 +32,12 @@
             <pre><code>{ rooms: 3, bathrooms: 2, garden: true }</code></pre>
         </div>
 
+        <h2>Try It Yourself</h2>
+        <p>Type your solution code below:</p>
+        <b> Take a screenshot with both your solution code, the output, and your browser's url. Submit all your
+            screenshots to KHub.</b>
         <h2>Experiment with Your Code</h2>
+
         <textarea id="codeInput" rows="10" cols="50" placeholder="Write your JavaScript code here..."></textarea><br>
         <button onclick="runCode()">Run Code</button>
 
@@ -40,13 +45,14 @@
 
         <hr>
 
-        <h2>Lesson: Working with Object Properties</h2>
-        <div class="lesson">
-            <h3>Checking for Properties</h3>
-            <p>To check if an object contains a specific property, you can use the <code>in</code> operator or the
-                <code>hasOwnProperty</code> method:
-            </p>
-            <pre><code>// Using the "in" operator
+        <button class="accordion">Lesson: Working with Object Properties</button>
+        <div class="panel">
+            <div class="lesson">
+                <h3>Checking for Properties</h3>
+                <p>To check if an object contains a specific property, you can use the <code>in</code> operator or the
+                    <code>hasOwnProperty</code> method:
+                </p>
+                <pre><code>// Using the "in" operator
 if ("key" in object) {
     // Code to be executed if "key" is in the object
 }
@@ -55,33 +61,37 @@ if ("key" in object) {
 if (object.hasOwnProperty("key")) {
     // Code to be executed if the object has the key
 }</code></pre>
+            </div>
+
+            <h3>Deleting Properties</h3>
+            <p>To delete a property from an object, you can use the <code>delete</code> operator:</p>
+            <pre><code>delete object.propertyName;</code></pre>
+            <h3>Combining Concepts</h3>
+            <p>Combining these concepts allows you to check if a property exists in an object and delete it if it does,
+                all
+                in one line of code. Practice integrating conditional checks and property deletion to effectively manage
+                object properties.</p>
+
+
+            <h3>Logging Object Contents</h3>
+            <p>To print the content of an object:</p>
+            <pre><code>console.log(object);</code></pre>
+            <p>For a more readable format, you can use <code>JSON.stringify</code>:</p>
+            <pre><code>console.log(JSON.stringify(object_name));</code></pre>
+            <h3>Logging Key-Value Pairs</h3>
+            <p>To log each key-value pair in an object, you can use <code>Object.entries</code> and
+                <code>forEach</code>:
+            </p>
+            <pre><code>Object.entries(object).forEach(([key, value]) => { console.log(`${key}: ${value}`); });</code></pre>
+            <h3>Combining Concepts</h3>
+            <p>Combining these concepts allows you to check if a property exists in an object and delete it if it does,
+                all
+                in
+                one line of code. Practice integrating conditional checks and property deletion to effectively manage
+                object
+                properties.</p>
         </div>
-
-        <h3>Deleting Properties</h3>
-        <p>To delete a property from an object, you can use the <code>delete</code> operator:</p>
-        <pre><code>delete object.propertyName;</code></pre>
-        <h3>Combining Concepts</h3>
-        <p>Combining these concepts allows you to check if a property exists in an object and delete it if it does, all
-            in one line of code. Practice integrating conditional checks and property deletion to effectively manage
-            object properties.</p>
-
-
-        <h3>Logging Object Contents</h3>
-        <p>To print the content of an object:</p>
-        <pre><code>console.log(object);</code></pre>
-        <p>For a more readable format, you can use <code>JSON.stringify</code>:</p>
-        <pre><code>console.log(JSON.stringify(object_name));</code></pre>
-        <h3>Logging Key-Value Pairs</h3>
-        <p>To log each key-value pair in an object, you can use <code>Object.entries</code> and <code>forEach</code>:
-        </p>
-        <pre><code>Object.entries(object).forEach(([key, value]) => { console.log(`${key}: ${value}`); });</code></pre>
-        <h3>Combining Concepts</h3>
-        <p>Combining these concepts allows you to check if a property exists in an object and delete it if it does, all
-            in
-            one line of code. Practice integrating conditional checks and property deletion to effectively manage object
-            properties.</p>
     </div>
-
     </div>
 </body>
 
